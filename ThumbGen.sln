@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbGen", "ThumbGen\ThumbG
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbGen.Core", "ThumbGen.Core\ThumbGen.Core\ThumbGen.Core.csproj", "{69DB7EA3-4F5B-4D5A-8B02-6BB60FD6FF63}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbGen.Renderer", "ThumbGen.Renderer\ThumbGen.Renderer.csproj", "{21BDCBCA-6E7B-437B-8E16-F88540DE78AC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{69DB7EA3-4F5B-4D5A-8B02-6BB60FD6FF63}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69DB7EA3-4F5B-4D5A-8B02-6BB60FD6FF63}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69DB7EA3-4F5B-4D5A-8B02-6BB60FD6FF63}.Release|Any CPU.Build.0 = Release|Any CPU
-		{21BDCBCA-6E7B-437B-8E16-F88540DE78AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{21BDCBCA-6E7B-437B-8E16-F88540DE78AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{21BDCBCA-6E7B-437B-8E16-F88540DE78AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{21BDCBCA-6E7B-437B-8E16-F88540DE78AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

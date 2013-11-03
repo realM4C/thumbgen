@@ -1222,46 +1222,46 @@
     <Resource Include="Images\jump32.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\Output\Debug\CookComputing.XmlRpcV2.dll">
+    <EmbeddedResource Include="..\3rdParty\CookComputing.XmlRpcV2.dll">
       <Link>Assemblies\CookComputing.XmlRpcV2.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\DiffieHellman.dll">
+    <EmbeddedResource Include="..\3rdParty\DiffieHellman.dll">
       <Link>Assemblies\DiffieHellman.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\DiscUtils.Common.dll">
+    <EmbeddedResource Include="..\3rdParty\DiscUtils.Common.dll">
       <Link>Assemblies\DiscUtils.Common.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\DiscUtils.dll">
+    <EmbeddedResource Include="..\3rdParty\DiscUtils.dll">
       <Link>Assemblies\DiscUtils.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\libmp4v2.dll">
+    <EmbeddedResource Include="..\3rdParty\libmp4v2.dll">
       <Link>Assemblies\libmp4v2.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\MediaInfo.dll">
+    <EmbeddedResource Include="..\3rdParty\MediaInfo.dll">
       <Link>Assemblies\MediaInfo.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\MP4V2Wrapper.dll">
+    <EmbeddedResource Include="..\3rdParty\MP4V2Wrapper.dll">
       <Link>Assemblies\MP4V2Wrapper.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\Org.Mentalis.Security.dll">
+    <EmbeddedResource Include="..\3rdParty\Org.Mentalis.Security.dll">
       <Link>Assemblies\Org.Mentalis.Security.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\Tamir.SharpSSH.dll">
+    <EmbeddedResource Include="..\3rdParty\Tamir.SharpSSH.dll">
       <Link>Assemblies\Tamir.SharpSSH.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\ThumbGen.Core.dll">
+    <EmbeddedResource Include="$(TargetDir)\ThumbGen.Core.dll">
       <Link>Assemblies\ThumbGen.Core.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\ThumbGen.Renderer.dll">
+    <EmbeddedResource Include="..\3rdParty\ThumbGen.Renderer.dll">
       <Link>Assemblies\ThumbGen.Renderer.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\Newtonsoft.Json.dll">
+    <EmbeddedResource Include="..\3rdParty\Newtonsoft.Json.dll">
       <Link>Assemblies\Newtonsoft.Json.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\RestSharp.dll">
+    <EmbeddedResource Include="..\3rdParty\RestSharp.dll">
       <Link>Assemblies\RestSharp.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\Output\Debug\WatTmdb.dll">
+    <EmbeddedResource Include="..\3rdParty\WatTmdb.dll">
       <Link>Assemblies\WatTmdb.dll</Link>
     </EmbeddedResource>
   </ItemGroup>
@@ -1276,13 +1276,7 @@
     <PreBuildEvent>rem xcopy "$(TargetDir)..\..\3rdParty\*.*" "$(TargetDir)"  /Y /C</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>rem ######## call Babel to obfuscate the exe and store it in BabelOut
-rem "c:\Program Files (x86)\Babel\babel.exe" $(TargetPath)
-rem ######## copy the obfuscated exe in a fake zip file for autoupdate
-rem copy $(TargetDir)BabelOut\$(TargetFileName)  $(TargetDir)BabelOut\$(TargetName).zip
-rem ######### zip the obfuscated file and store it in the _publish folder
-rem "c:\Program Files\7-zip\7z.exe" a -tzip c:\_publish\$(TargetName).zip $(TargetDir)BabelOut\$(TargetFileName)
-</PostBuildEvent>
+    <PostBuildEvent></PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

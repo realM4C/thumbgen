@@ -78,23 +78,19 @@
     <Compile Include="VersionNumber.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="..\..\3rdParty\NLog.dll" >
-	<Link>Assemblies\NLog.dll</Link>
+    <EmbeddedResource Include="..\..\3rdParty\NLog.dll">
+      <Link>Assemblies\NLog.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\3rdParty\Ionic.Zip.Reduced.dll" >
-	<Link>Assemblies\Ionic.Zip.Reduced.dll</Link>
+    <EmbeddedResource Include="..\..\3rdParty\Ionic.Zip.Reduced.dll">
+      <Link>Assemblies\Ionic.Zip.Reduced.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\3rdParty\AvalonDock.dll" >
-	<Link>Assemblies\AvalonDock.dll</Link>
+    <EmbeddedResource Include="..\..\3rdParty\AvalonDock.dll">
+      <Link>Assemblies\AvalonDock.dll</Link>
     </EmbeddedResource>
-    <EmbeddedResource Include="..\..\3rdParty\Fluent.dll" >
-	<Link>Assemblies\Fluent.dll</Link>
+    <EmbeddedResource Include="..\..\3rdParty\Fluent.dll">
+      <Link>Assemblies\Fluent.dll</Link>
     </EmbeddedResource>
-
     <Content Include="demo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="core_builder.proj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

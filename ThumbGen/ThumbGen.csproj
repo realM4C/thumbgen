@@ -676,12 +676,6 @@
     <EmbeddedResource Include="Presets\WDTVLive Movies Sheet.tgp" />
     <EmbeddedResource Include="Presets\WDTVLive TV Shows Sheet.tgp" />
     <EmbeddedResource Include="Presets\Xtreamer TV Shows.tgp" />
-    <None Include="_Full Builder.proj">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_Builder.proj">
-      <SubType>Designer</SubType>
-    </None>
     <EmbeddedResource Include="Presets\Xtreamer TG_Sheets.tgp" />
     <EmbeddedResource Include="Presets\ACRyan POHD.tgp" />
     <EmbeddedResource Include="Presets\_Default ThumbGen Template_.zip" />
@@ -1276,7 +1270,8 @@
     <PreBuildEvent>rem xcopy "$(TargetDir)..\..\3rdParty\*.*" "$(TargetDir)"  /Y /C</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent></PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

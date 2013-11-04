@@ -290,37 +290,6 @@ namespace ThumbGen
                                 _result = true;
                             }
                         }
-
-                        //if (!string.IsNullOrEmpty(_title) && !string.IsNullOrEmpty(_imageUrl))
-                        //{
-                        //    ResultMovieItem _movieItem = new ResultMovieItem(_id, _title, _imageUrl, CollectorName);
-                        //    _movieItem.CollectorMovieUrl = _link;
-                        //    ResultsList.Add(_movieItem);
-                        //    _result = true;
-                        //}
-
-                        //// process backdrops here
-                        //string _backdropsLink = _link.Insert(_link.LastIndexOf('/'), "-Screenshots");
-                        //string _backdropPage = Helpers.GetPage(_backdropsLink);
-                        //if (!string.IsNullOrEmpty(_backdropPage))
-                        //{
-                        //    Regex _reg = new Regex("<img src=\"(http://images.blu-ray.com/reviews/[^\"]*)\"(?:[\\w\\W])*?", RegexOptions.IgnoreCase);
-                        //    foreach (Match _m2 in _reg.Matches(_backdropPage))
-                        //    {
-                        //        string _originalUrl = null;
-                        //        string _thumbUrl = _m2.Groups[1].Value;
-                        //        if (!string.IsNullOrEmpty(_thumbUrl))
-                        //        {
-                        //            _originalUrl = _thumbUrl.Insert(_thumbUrl.LastIndexOf('.'), "_large");
-                        //        }
-                        //        if (!string.IsNullOrEmpty(_title) && !string.IsNullOrEmpty(_thumbUrl) && !string.IsNullOrEmpty(_originalUrl))
-                        //        {
-                        //            BackdropItem _bi = new BackdropItem(_id, null, this.CollectorName, _thumbUrl, _originalUrl);
-                        //            _bi.SetSize("1280", "720");
-                        //            BackdropsList.Add(_bi);
-                        //        }
-                        //    }
-                        //}
                     }
                     catch(Exception ex)
                     {

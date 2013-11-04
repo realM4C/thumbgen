@@ -75,42 +75,6 @@ namespace ThumbGen
             }
         }
 
-        //public static string EncryptPass(string pass)
-        //{
-        //    return StringEncrypt(pass, keyStr).ToString();
-        //}
-
-        //public static string DecryptPass(string pass)
-        //{
-        //    return StringEncrypt(pass, keyStr).ToString();
-        //}
-
-        //public static StringBuilder StringEncrypt(string messageStr, string keyStr)
-        //{
-        //    if (string.IsNullOrEmpty(messageStr))
-        //    {
-        //        return new StringBuilder();
-        //    }
-        //    const int EOS = -1;
-        //    StringReader Msr = new StringReader(messageStr);
-        //    StringBuilder OutStr = new StringBuilder();
-        //    int keyLength = keyStr.Length - 1;
-        //    int index = 0;
-        //    char ch;
-        //    int x;
-        //    do
-        //    {
-        //        x = Msr.Read() ^ keyStr[index];
-        //        ch = Convert.ToChar(x);
-        //        OutStr.Append(ch);
-        //        index++;
-        //        if (index > keyLength)
-        //            index = 0;
-        //        //start all over with the key                           
-        //    } while (Msr.Peek() != EOS);
-        //    return OutStr;
-        //}
-
         public static string ConstructPath(string movieFilename, string mask, string extension, bool forcePath)
         {
             if (!string.IsNullOrEmpty(movieFilename) && !string.IsNullOrEmpty(mask))

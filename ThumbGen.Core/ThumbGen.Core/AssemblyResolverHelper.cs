@@ -21,16 +21,6 @@ namespace ThumbGen.Core
 
         static System.Reflection.Assembly Resolver(object sender, ResolveEventArgs args)
         {
-            //if (args.Name.Contains("PropertyGrid"))
-            //{
-            //    return GenericHelpers.GetEmbeddedAssembly("ThumbGen.Core.Assemblies.ActiproSoftware.PropertyGrid.Wpf351.dll");
-            //}
-
-            //if (args.Name.Contains("Shared.Wpf"))
-            //{
-            //    return GenericHelpers.GetEmbeddedAssembly("ThumbGen.Core.Assemblies.ActiproSoftware.Shared.Wpf351.dll");
-            //}
-
             if (args.Name.Contains("NLog"))
             {
                 return GenericHelpers.GetEmbeddedAssembly("ThumbGen.Core.Assemblies.NLog.dll");
